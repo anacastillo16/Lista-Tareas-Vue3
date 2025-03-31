@@ -1,17 +1,15 @@
 <template>
     <div class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-6">
         <form action="#" class="flex items-center mb-4">
-            <label for="task" class="text-lg font-medium">Añadir tarea: </label>
-            <div class="flex space-x-4 ms-4">
-                <input type="text" v-model="newTask" class="px-4 py-2 border rounded-lg border-gray-300 focus:ring-2 focus:ring-blue-400 focus:outline-none">
-                <button type="submit" @click="addTask" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Añadir</button>
-            </div>
+                <label for="task" class="text-lg font-medium">Añadir tarea: </label>
+                <input type="text" v-model="newTask" class="px-4 py-2 border rounded-lg border-gray-300 focus:ring-2 focus:ring-blue-400 focus:outline-none ms-4">
+                <label for="task" class="text-lg font-medium ms-4">Descripción: </label>
+                <input type="text" v-model="newTask" class="px-4 py-2 border rounded-lg border-gray-300 focus:ring-2 focus:ring-blue-400 focus:outline-none ms-4">
+                <button type="submit" @click="addTask" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 ms-4">Añadir</button>
         </form> 
         <div class="flex items-center mb-4">
-            <label for="task" class="text-lg font-medium">Buscar tarea: </label>
-            <div class="flex space-x-4 ms-4">
-                <input type="text" v-model="search" class="px-4 py-2 border rounded-lg border-gray-300 focus:ring-2 focus:ring-blue-400 focus:outline-none">
-            </div>
+                <label for="task" class="text-lg font-medium">Buscar tarea: </label>
+                <input type="text" v-model="search" class="px-4 py-2 border rounded-lg border-gray-300 focus:ring-2 focus:ring-blue-400 focus:outline-none ms-4">
         </div>
        
 
